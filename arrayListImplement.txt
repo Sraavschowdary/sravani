@@ -1,0 +1,15 @@
+
+import java.util.ArrayList;
+
+public class arrayListImplement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Object> l=new ArrayList<>();
+		l.add(1);
+		l.add("Siri");
+		l.add(500);
+		System.out.println(l);
+	}
+
+}
