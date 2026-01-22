@@ -1,0 +1,64 @@
+MAVEN PROJECT
+
+POM.XML
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.selenium</groupId>
+    <artifactId>selenium-maven-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- Selenium WebDriver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.17.0</version>
+        </dependency>
+
+        <!-- TestNG (optional but recommended) -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
+
+
+CODE
+
+package sravani.sravani;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumTest {
+
+    public static void main(String[] args) {
+
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            driver.get("https://www.google.com");
+
+            
+            WebElement searchBox = driver.findElement(By.name("q"));
+            searchBox.click();
+
+            System.out.println("Test executed successfully");
+
+        } finally {
+          
+            driver.quit();
+        }
+    }
+}
