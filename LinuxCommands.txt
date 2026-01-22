@@ -1,0 +1,22 @@
+$ mkdir sravanidirectory
+
+$ pwd
+/home/cg/root/6939cfd55d516
+$ cd sravanidirectory
+
+$ pwd
+/home/cg/root/6939cfd55d516/sravanidirectory
+$ touch file.txt
+
+$ chmod 644 file.txt
+
+$ chmod u=rw,g=r,o=r my_file.txt
+chmod: cannot access 'my_file.txt': No such file or directory
+$ chmod u=rw,g=r,o=r file.txt
+
+$ ls -l file.txt
+-rw-r--r-- 1 codeuser10070 codeuser10070 0 Jan 22 04:17 file.txt
+$ echo "Hello World" > file.txt
+
+$ cat file.txt
+Hello World
