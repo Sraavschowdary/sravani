@@ -1,0 +1,88 @@
+
+
+Phases of SDLC 
+
+ 1. Requirement Analysis
+This is the phase where we listen.
+* We talk to users, clients, or stakeholders.
+* We understand their problems and expectations.
+* We write down **what the software should do**.
+Example:
+A client says: “I want an app where users can log in and see their profile.”
+
+
+ 2. Planning 
+This is the thinking and planning stage.
+* Decide how much time, money, and people are needed.
+* Identify risks and create a project schedule.
+* Decide whether the project is possible or not.
+Example:
+“We need 3 developers, 1 tester, and 3 months to build this app.”
+
+
+ 3. Design 
+This is where we draw the blueprint.
+* Design screens, buttons, database, and system flow.
+* Decide how different parts of the system talk to each other.
+Example:
+Designing the login screen, dashboard layout, and database tables.
+
+
+ 4. Development 
+This is the coding phase.
+* Developers write the actual code.
+* Convert designs into a working application.
+Example:
+Writing code for login, registration, and user profile features.
+
+
+ 5. Testing 
+This is where we check for mistakes.
+* Test the software to find bugs or errors.
+* Ensure it works as expected in different situations.
+Example:
+Testing valid login, invalid login, and empty fields.
+
+
+
+6. Deployment
+This is the release phase.
+* The software is made live for real users.
+* Installed on servers or published in app stores.
+Example:
+Launching the app so users can start logging in.
+
+
+
+7. Maintenance 
+This is the after-release care phase.
+* Fix bugs found by users.
+* Improve features and performance.
+* Update the software when needed.
+Example:
+Fixing a login issue or adding a “Forgot Password” feature.
+
+
+
+JIRA
+
+1. User Story for Valid Login
+Title: User can log in with valid credentials
+Description:
+As a registered user,
+I want to log in to the application using my valid username and password,
+So that I can access my account and use the application features.
+
+2. User Story for Invalid Login
+Title: User cannot log in with invalid credentials
+Description:
+As a user,
+I want the system to prevent login with incorrect username or password,
+So that my account remains secure and I am notified of invalid login attempts.
+
+3. User Story for Mandatory Field Validation
+Title: Login fields are mandatory
+Description:
+As a user,
+I want the login form to validate mandatory fields,
+So that I cannot submit the login form with empty username or password fields.
