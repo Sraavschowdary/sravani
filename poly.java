@@ -5,17 +5,17 @@ abstract class Instrument {
 
 }
 
-public class Flute {
+public class Flute extends Instrument{
 	void play() {
 		System.out.println("Flute is playing toot toot toot toot");
 	}
 }
-public class Guitar {
+public class Guitar extends Instrument{
 	void play() {
 		System.out.println("Guitar is playing tin tin tin");
 	}
 }
-public class Piano {
+public class Piano extends Instrument{
 	void play() {
 		System.out.println("Piano is playing tan tan tan tan");
 	}
@@ -23,11 +23,11 @@ public class Piano {
 public class poly {
 
 	public static void main(String[] args) {
-		Flute f=new Flute();
+		Instrument f=new Flute();
 		f.play();
-		Piano p=new Piano();
+		Instrument p=new Piano();
 		p.play();
-		Guitar g=new Guitar();
+		Instrument g=new Guitar();
 		g.play();
 
 	}
